@@ -6,10 +6,10 @@ var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
 var alphaCaps = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numbers =[0,1,2,3,4,5,6,7,8,9,];
 
-
+var usedVals= "";
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  // var password = generatePassword();
   var passwordText = document.querySelector("#password");
   var caps = confirm("Would you like the password to contain Capital letters");//sets values to true or false dependent on answer
   var low= confirm("Would you like the password to contain lowercase letters");
@@ -22,15 +22,27 @@ function writePassword() {
     alert("Password is not within the acceptable amount of characters");
     passLength = prompt("Enter a number greater than 8 and less than 128");
   }
-
-  function generatePassword(caps, low, spec, passLength){
-    for(var i = 0; i  <= passLength; i++){
-       password += Math.floor(Math.random() + arraynameofwhatcharatersbeigused.length);
-    }
-    return password;
+  if(caps){
+    usedVals += alphaCaps;
+  }else if(low){
+    usedvals+=alphabet;
+  }else if(spec){
+    usedVals += specCharacters;
+  }else if(nums){
+    usedVals += numbers;
+  }else{
+    alert("atleast one character type must be selected");
   }
+  console.log(usedVals);
 }
-  passwordText.value = password;
+//   function generatePassword(caps, low, spec, passLength){
+//     for(var i = 0; i  <= passLength; i++){
+//        password += Math.floor(Math.random() + arraynameofwhatcharatersbeigused.length);
+//     }
+//     return password;
+//   }
+// }
+//   passwordText.value = password;
 
 
 
