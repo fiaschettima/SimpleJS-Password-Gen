@@ -14,8 +14,13 @@ function writePassword() {
   var spec =confirm("Can the password contain special characters such as !@$&");
   var nums = confirm("Would you like the password to contain numbers");
   var passLength = prompt("Choose how many characters the password can contain. (please choose a number 8-128)")
+  if(passLength < 8 || passLength > 128){
+    alert("Password is not within the acceptable amount of characters");
+    passLength = prompt("Enter a number greater than 8 and less than 128");
+  }
 
-  function generatePassword(){
+  function generatePassword(caps, low, spec, passLength){
+    
   }
   // passwordText.value = password;
 
@@ -26,7 +31,9 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
+for (password <= passLength){
 
+}
 
 
 
