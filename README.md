@@ -15,6 +15,7 @@ Here's a few quick links:
 * [Installation](#installation)
 * [Code Snippets](#code-snippets)
 * [Usage](#usage)
+* [Technology used](#technology-used)
 * [Credits](#credits)
 * [License](#license)
 ---
@@ -37,7 +38,16 @@ and rounded down by math floor. Doing this will pick any position inside the arr
 ## Usage 
 
 Generate Unique secure passwords quickly
+---
 
+## Technology Used
+    -JavaScript
+    -HTML
+    -CSS
+---
+## Learning Points
+    This project offered a chance to learn and gain a better understanding of using basic JS declaration and functions.
+---
 ## Credits
 
 - [W3 Scools](https://www.w3schools.com/)
@@ -45,4 +55,9 @@ Generate Unique secure passwords quickly
 ---
 ## License
 
-MIT License
+    MIT License
+---
+## Author
+    Matthew Fiaschetti 
+
+[Github Profile](https://github.com/fiaschettima)
