@@ -16,8 +16,10 @@ Here's a few quick links:
 * [Code Snippets](#code-snippets)
 * [Usage](#usage)
 * [Technology used](#technology-used)
+* [learning Points](#learning-points)
 * [Credits](#credits)
 * [License](#license)
+* [Author](#author)
 ---
 
 ## Installation
